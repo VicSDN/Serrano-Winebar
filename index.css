@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    border: 3px solid red;
+    /* Puedes ajustar el color y el grosor según tus preferencias */
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Alinea verticalmente los elementos en el centro si es necesario */
+}
+
+.wine {
+    /* Establece que 'wine' se alinee a la izquierda */
+    flex: 1;
+    text-align: left;
+}
+
+.price-cup,.price-bottle {
+    /* Establece que 'price-cup' y 'price-bottle' se alineen a la derecha */
+    flex: 0.5;
+    text-align: right;
+    margin-left:0.9rem;
+    margin-right: 0.9rem;
+}
