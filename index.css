@@ -1,31 +1,61 @@
+@font-face {
+    font-family: 'Logo';
+    src: url('/font/Andasia.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Titulosh1';
+    src: url('/font/CaslonCP.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'Letterfont';
+    src: url('/font/Elegant\ Sans\ Regular.ttf') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border:5px solid white;
 }
 
-* {
+/* {
     border: 3px solid red;
-    /* Puedes ajustar el color y el grosor según tus preferencias */
-}
+
+}*/
 
 .product {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Alinea verticalmente los elementos en el centro si es necesario */
 }
 
 .wine {
-    /* Establece que 'wine' se alinee a la izquierda */
+
     flex: 1;
     text-align: left;
 }
 
-.price-cup,.price-bottle {
-    /* Establece que 'price-cup' y 'price-bottle' se alineen a la derecha */
+.price-cup,
+.price-bottle {
     flex: 0.5;
     text-align: right;
-    margin-left:0.9rem;
+    margin-left: 0.9rem;
     margin-right: 0.9rem;
+}
+
+h1 {
+    text-align:center;
+    font-family: "Titulosh1";
+    letter-spacing: 16px;
+}
+
+h2 {
+    font-family: 'Titulosh1';
+}
+
+p {
+    font-family: "Letterfont";
+    font-size: 38px;
 }
