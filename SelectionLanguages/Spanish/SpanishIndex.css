@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Titulosh1';
+    src: url('/font/CaslonCP.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'Letterfont';
+    src: url('/font/Elegant\ Sans\ Regular.ttf') format('woff');
+}
+
+main {
+    background-color: #f8f8f8;
+    background-image: url('../..//img/Fondo.jpg');
+    background-size: auto 100%;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    margin-bottom: vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.opciones {
+    background-color: #f8f8f8;
+    font-family: 'Titulosh1' ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+.escoger{
+    
+    display:flex;
+    gap:15px;
+    margin-bottom: 10px;
+    float: center;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    
+ 
+
+}
+.vinos ,
+.paraPicar{
+    font-family: 'Letterfont';
+    font-size:22px;
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1%;
+}
+.logo {
+    max-width: 100%;
+    height: 5vh;
+
+}
