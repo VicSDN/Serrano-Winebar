@@ -1,14 +1,31 @@
+
+@font-face {
+    font-family: 'Titulosh1';
+    src: url('/font/CaslonCP.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'Letterfont';
+    src: url('/font/Elegant\ Sans\ Regular.ttf') format('woff');
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+   
 }
 
 main {
-    width: 100%;
-    background-color: #333;
-    min-height: 90vh;
+  background-color: #f8f8f8;
+background-image: url('./img/Fondo.jpg');
+ background-size: auto 100%;
+    background-position: center;
+    height: 100vh; 
+    margin: 0;
+    margin-bottom: 4vh;
+    background-repeat: no-repeat;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +56,7 @@ footer {
 .navbar a {
     float: center;
     font-size: 16px;
-    color: white;
+
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -54,13 +71,12 @@ footer {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
+    font-size: 20px;
     outline: none;
-    color: white;
+    color: #999;
     padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
+    border: solid 3px #41403E;
+    font-family: "Titulosh1";
     margin: 0;
 }
 
@@ -72,19 +88,23 @@ footer {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f8f8f8;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
+    font-family: "Letterfont";
+    font-size: 20px;
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: flex;
     text-align: center;
+    flex-direction: column;
+    gap:10px;
 }
 
 .dropdown-content a:hover {
@@ -108,4 +128,9 @@ footer {
     max-width: 100%;
     height: 5vh;
 
+}
+
+.flag {
+    width:2vw ;
+    height: auto;
 }
